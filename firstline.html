@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>cdnjs, fantaswam</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        .page {
+            background-color: #d0d5ca70;
+            height: 2000px;
+            width: 1600px;
+        }
+
+        .line1 {
+            background-color: #ebe9ef70;
+            height: 50px;
+            display: flex;
+            width: 1600px;
+
+
+        }
+
+        .logo {
+            background-color: #c2ea0d;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            inline-size: center;
+            align-items: center;
+            width: 60px;
+            width: 120px;
+        }
+
+        .logo-2 {
+
+            display: flex;
+            background-color: grey;
+            justify-content: center;
+            margin-left: 40px;
+            inline-size: center;
+            margin-top: 1px;
+            align-items: center;
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 120px;
+
+        }
+
+        .location {
+            margin-left: 850px;
+            align-items: center;
+            margin-top: 1px;
+            justify-content: center;
+            display: flex;
+        }
+
+        .select-1 {
+            margin-top: 15px;
+            color: blue;
+        }
+
+        .search-1 {
+            border: 1px solid black;
+            width: 800px;
+            height: 30px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .search-icon {
+            align-items: center;
+            margin-top: 9px;
+
+            display: flex;
+
+
+
+        }
+
+        .search-flex {
+            display: flex;
+            width: 1600px;
+            height: 50px;
+            background-color: #f3f7f570;
+        }
+
+        .profile-name1 {
+            margin-left: 150px;
+            margin-top: 10px;
+            font-weight: 60px;
+            margin-top: 15px;
+            border: 1px solid black;
+            width: 80px;
+            height: 30px;
+            text-align: center;
+
+            align-items: center;
+        }
+
+        .profile-name2 {
+            margin-left: 150px;
+            margin-top: 10px;
+            font-weight: 60px;
+            margin-top: 15px;
+            border: 1px solid black;
+            width: 80px;
+            height: 30px;
+            text-align: center;
+
+            align-items: center;
+        }
+
+        .profile-name3 {
+            margin-left: 150px;
+            margin-top: 10px;
+            font-weight: 60px;
+            margin-top: 15px;
+            border: 1px solid black;
+            width: 80px;
+            height: 30px;
+            text-align: center;
+
+            align-items: center;
+        }
+
+        .text-pla {
+            border: none;
+            width: 700px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .line3 {
+            display: flex;
+            width: 1600px;
+            height: 50px;
+            background-color: #f3f7f570;
+            margin-top: 8px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .line4 {
+            display: flex;
+
+
+
+        }
+
+        .card {
+            display: flex;
+            padding: 10px;
+        }
+
+        .card2 {
+            display: flex;
+            padding: 10px;
+        }
+
+        .card3 {
+            display: flex;
+            padding: 10px;
+        }
+
+        .card4 {
+            display: flex;
+            padding: 10px;
+        }
+
+        .line-last {
+            display: flex;
+            width: 1600px;
+            height: 200px;
+            background-color: #18211d70;
+        }
+
+        #footer {
+            /* background-color: lightgray; */
+            border: 1px solid black;
+            height: 150%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: "Inter", sans-serif;
+            gap: 20px;
+            position: relative;
+            background-color: #212121;
+
+
+        }
+
+        #footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+
+
+
+        #footer_above_div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* gap: 20px; */
+            /* border: 1px solid black; */
+            padding: 20px;
+            position: relative;
+            top: 20px;
+            color: white;
+
+        }
+
+        #footer_above_div h3 {
+            color: #878787;
+        }
+
+        .footer_content {
+            font-size: 15px;
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 20rem;
+            padding: 20px;
+
+        }
+
+        #about {
+            display: flex;
+            /* justify-content: center;
+    align-items: center; */
+            gap: 5px;
+            flex-direction: column;
+        }
+
+        #group_companies {
+            display: flex;
+            /* justify-content: center;
+    align-items: center; */
+            gap: 5px;
+            flex-direction: column;
+        }
+
+        #help {
+            display: flex;
+            /* justify-content: center;
+    align-items: center; */
+            gap: 5px;
+            flex-direction: column;
+        }
+
+        #consumer_policy {
+
+            display: flex;
+            /* justify-content: center;
+    align-items: center; */
+            gap: 5px;
+            flex-direction: column;
+        }
+
+        #Mail_us {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+            border-left: 1px solid #878787;
+            /* border-right: 1px solid #878787; */
+        }
+
+        .mail_above {
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center;  */
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .mail_below {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            flex-direction: column;
+            border-top: 1px solid #878787;
+        }
+
+        #registered_Office_Address {
+            display: flex;
+            /* justify-content: center;
+    align-items: center; */
+            border-left: 1px solid #878787;
+
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .footer_content_copyright {
+            /* border: 1px solid black; */
+            border-top: 1px solid #878787;
+            width: 100%;
+            height: 5rem;
+            /* border-radius: 12px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        #copyright {
+            /* border: 1px solid black; */
+            /* width: 100%;     */
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            /* flex:1;  */
+            /* color:#e0e0e0;  */
+            color: white;
+        }
+
+        #copyright p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .social_icons_div {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .social_icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #facebook,
+        #youtube {
+            width: 2rem;
+            height: 1.7rem;
+        }
+
+
+        #instagram {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        #twitter {
+            width: 2rem;
+            height: 1.8rem;
+        }
+
+        .line5 {
+            display: flex;
+            width: 1600px;
+            height: 300px;
+            background-color: #f3f7f570;
+            border: 1px solid black;
+            padding: 20px;
+
+        }
+
+        .image-back {
+
+
+
+
+            display: flex;
+
+
+
+            background-color: #f57a1570;
+            width: 1550px;
+            height: 250px;
+            margin-left: 2000px;
+            margin-top: 20px;
+
+
+
+        }
+
+        .shop-back {
+            border: 1px solid #450404;
+            height: 300px;
+            width: 330px;
+            display: flex;
+            border-radius: 10px;
+
+            margin-right: 100px;
+            margin-bottom: 200px;
+            background-color: #fff;
+        }
+
+        .img {
+            background-color: rgb(236, 125, 125);
+            width: 200%;
+            height: 150px;
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: px;
+            margin-top: -10px;
+
+        }
+
+        .product {
+            margin-left: -100px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            margin-left: -200px;
+        }
+
+        .buy {
+
+            padding: 10px 20px;
+            background-color: #290fab70;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="line1">
+            <div class="logo"><img src="https://rukminim1.flixcart.com/fk-p-flap/52/44/image/d2ecfddf891a3922.png?q=60">
+                Flipkart</div>
+
+            <div class="logo-2"><img
+                    src="https://rukminim1.flixcart.com/fk-p-flap/58/44/image/7ab4040af860941d.png?q=60">travel</div>
+
+
+
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Location not set</p>
+                <p class="select-1">Select delivery location</p>
+
+
+            </div>
+        </div>
+
+        <div class="search-flex">
+            <div class="search-1">
+                <div class="search-icon">
+
+                    <i class=" fa-solid fa-magnifying-glass"></i>
+                    <input class="text-pla" type="text" placeholder="search for products, brands and more">
+                </div>
+            </div>
+
+            <diV class="profile-name1">login</div>
+            <div class="profile-name2">more</div>
+            <div class="profile-name3">cart</div>
+        </div>
+        <div class="line3">
+            <div><i class="fa-solid fa-clipboard-question"></i>
+                <div> for you</div>
+            </div>
+            <div><i class="fa-solid fa-person-dress"></i>
+                <div>dress </div>
+            </div>
+            <div><i class="fa-solid fa-dumbbell"></i>
+                <div>Fashion</div>
+            </div>
+            <div><i class="fa-solid fa-mobile"></i>
+                <div>mobiles</div>
+            </div>
+            <div><i class="fa-solid fa-plug"></i>
+                <div>beauty</div>
+            </div>
+            <div><i class="fa-solid fa-laptop"></i>
+                <div>electronics</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="line4">
+                <div class="card">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/5205a8d6a461392a.jpg?q=60"
+                        height="200px" width="400px">
+                </div>
+
+
+                <div class="card2">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/052ab1594c9c31a3.jpg?q=60"
+                        height="200px" width="400px">
+                </div>
+                <div class="card3">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/a2988d54d9d099a5.png?q=60"
+                        height="200px" width="400px">
+                </div>
+                <div class="card4">
+
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/5c77ae68093ec02c.jpg?q=60"
+                        height="200px" width="330px">
+                </div>
+            </div>
+
+            <div class="line5">
+
+
+                <div class="shop-back">
+
+                    <div class="img">
+                        <img src="nik.png" width="200px" height="150px">
+                        <div class="content">
+                            <h1 class="product">ASUS TUF a15</h1>
+
+                            <p class="price">Price: $XX.XX</p>
+                            <button class="buy">Buy Now</button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    <div>
+        <div class="line-last">
+            <div>
+                <footer class="footer" id="footer">
+                    <div class="footer_above" id="footer_above_div">
+                        <div class="footer_content" id="about">
+                            <div>
+                                <h3>About </h3>
+                            </div>
+                            <div>Contact Us</div>
+                            <div>About Us</div>
+                            <div>Careers</div>
+                            <div>Flipkart Stories</div>
+                            <div>Press</div>
+                            <div>Corporate Information</div>
+                        </div>
+                        <div class="footer_content" id="group_companies">
+                            <div>
+                                <h3>GROUP COMPANIES</h3>
+                            </div>
+                            <div>Myntra</div>
+                            <div>cleartrip</div>
+                            <div>shopsy</div>
+
+                        </div>
+                        <div class="footer_content" id="help">
+                            <div>
+                                <h3>HELP</h3>
+                            </div>
+                            <div>Payments</div>
+                            <div>Shipping</div>
+                            <div>Returns & Refunds</div>
+                            <div>FAQ</div>
+                        </div>
+                        <div class="footer_content" id="consumer_policy">
+                            <div>
+                                <h3>CONSUMER POLICY</h3>
+                            </div>
+                            <div>Cancellation & Returns</div>
+                            <div>Terms Of Service</div>
+                            <div>Returns & Refunds</div>
+                            <div>EPR</div>
+                            <div>FSSAI Food Safety Connect</div>
+                        </div>
+                        <div class="footer_content" id="Mail_us">
+                            <div class="mail_above">
+                                <div>
+                                    <h3>MAIL US</h3>
+                                </div>
+                                <div>
+                                    <p>Buildngs Alyssa, Begonia &
+                                        Clove Embassy Tech Vi"age,
+                                        Outer Ring Road, Devarabeesanaha"i Vilager
+                                        Bengaluru. 560103.
+                                        Kunataka. India</p>
+                                </div>
+                            </div>
+                            <div class="mail_below">
+                                <div>
+                                    <h3>SOCIAL </h3>
+                                </div>
+                                <div class="social_icons_div">
+                                    <div> <i class="fa-brands fa-facebook-f" class="social_icons" id="facebook"></i>
+                                    </div>
+                                    <div><i class="fa-brands fa-instagram" class="social_icons" id="instagram"></i>
+                                    </div>
+                                    <div><i class="fa-brands fa-x-twitter" class="social_icons" id="twitter"></i>
+                                    </div>
+                                    <div><i class="fa-brands fa-youtube" class="social_icons" id="youtube"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="footer_content_copyright">
+                            <div id="copyright">
+                                <p>All Rights Reserved | &copy; nikshan kummar</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
